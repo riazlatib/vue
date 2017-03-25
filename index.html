@@ -8,13 +8,25 @@
   <div id="app">
     <input v-model="message" /><br />
     {{message}}
+
+    <ul>
+      <li v-for="food in food_items">{{food}}</li>
+    </ul>
+
+    <button v-on:click="buttonClick">Click Me</button>
   </div>
 
   <script>
     new Vue({
       el: '#app',
       data: {
-        'message': 'Hello World'
+        'message': 'Hello World',
+        'food_items': ['Burgers','Hotdogs','Fries']
+      },
+      methods: {
+        buttonClick: function() {
+          alert('Hey! I was clicked');
+        }
       }
     });
   </script>
