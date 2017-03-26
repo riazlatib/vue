@@ -1,3 +1,3 @@
-# VueJS Notes App
+# VueJS
 
-Testing out the Vue.js library along with Vuex Application Framework to build a notes app.
+Testing out the Vue.js library
